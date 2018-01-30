@@ -1,4 +1,4 @@
-package src.main.java.com.animalclass.demo;
+package com.animalclass.demo;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -10,7 +10,7 @@ public class MainController {
 
     public class Main {
 
-        public static void main(String[] args) {
+        public void main(String[] args) {
 
             Animal a = new Animal("The overloaded constructor has run");
             a.setName("Yogi Bear");
@@ -59,11 +59,11 @@ public class MainController {
 
         private String name;
         //this is the default constructor
-        public Animal(){
+        public Cat(){
             System.out.println("An animal has been created ... ");
         }
         //this is an overloaded constructor
-        public Animal (String message){
+        public Cat (String message){
             System.out.println(message);
         }
 
@@ -89,11 +89,11 @@ public class MainController {
 
         private String name;
         //this is the default constructor
-        public Animal(){
+        public Bird(){
             System.out.println("An animal has been created ... ");
         }
         //this is an overloaded constructor
-        public Animal (String message){
+        public Bird (String message){
             System.out.println(message);
         }
 
@@ -118,7 +118,7 @@ public class MainController {
     @RestController
     public class AnimalApp {
 
-        public static void main(String[] args) {
+        public void main(String[] args) {
 
             Animal a = new Animal();
             print(a.eat());
@@ -136,8 +136,9 @@ public class MainController {
             print(b.fly());
 
         }
-        private static void print(String s){
+        private void print(String s){
             System.out.println(s);
         }
     }
+    return
 }
